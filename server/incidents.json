@@ -1,0 +1,176 @@
+[
+  {
+    "id": "SH-1001",
+    "type": "Accident with injuries",
+    "emergencyType": "Accident with injuries",
+    "severity": "HIGH",
+    "description": "There is a road accident. A person is unconscious and bleeding heavily.",
+    "conditions": [
+      "Unconscious",
+      "Bleeding heavily"
+    ],
+    "actions": [
+      "Call 112 immediately for emergency medical assistance",
+      "If safe to do so, move the person to a safe area away from traffic"
+    ],
+    "latitude": null,
+    "longitude": null,
+    "location": null,
+    "language": "English",
+    "status": "RESOLVED",
+    "createdAt": "2026-10-06T09:14:57.332Z",
+    "updatedAt": "2026-10-06T09:19:19.893Z"
+  },
+  {
+    "id": "SH-1002",
+    "type": "Injury and bleeding",
+    "emergencyType": "Injury and bleeding",
+    "severity": "HIGH",
+    "description": "Someone has severe bleeding from an injury.",
+    "conditions": [
+      "Severe bleeding from an injury"
+    ],
+    "actions": [
+      "Apply direct pressure to the wound with a clean cloth or bandage. Do not remove any foreign objects. Call 112 for further assistance."
+    ],
+    "latitude": 17.346608018749034,
+    "longitude": 78.53676293639998,
+    "location": "17.346608018749034, 78.53676293639998",
+    "language": "English",
+    "status": "RESOLVED",
+    "createdAt": "2026-10-06T10:06:46.473Z",
+    "updatedAt": "2026-10-06T11:39:15.299Z"
+  },
+  {
+    "id": "SH-1003",
+    "type": "Road Accident with Injuries",
+    "emergencyType": "Road Accident with Injuries",
+    "severity": "CRITICAL",
+    "description": "A person met with a road accident. They are unconscious and bleeding heavily.",
+    "conditions": [
+      "Unconscious",
+      "Bleeding Heavily"
+    ],
+    "actions": [
+      "Attempt to keep the person calm and still.",
+      "Cover the bleeding area with a clean cloth.",
+      "Do not move the person unless they are in immediate danger.",
+      "Call 112 for emergency medical assistance immediately."
+    ],
+    "latitude": 17.346685013881896,
+    "longitude": 78.53674353995126,
+    "location": "17.346685013881896, 78.53674353995126",
+    "language": "English",
+    "status": "RESOLVED",
+    "createdAt": "2026-10-06T11:37:50.640Z",
+    "updatedAt": "2026-10-06T11:39:19.912Z"
+  },
+  {
+    "id": "SH-1004",
+    "type": "Road Accident with Injuries",
+    "emergencyType": "Road Accident with Injuries",
+    "severity": "HIGH",
+    "description": "There is a road accident. A person is unconscious and bleeding heavily.",
+    "conditions": [
+      "Person is unconscious",
+      "Person is bleeding heavily"
+    ],
+    "actions": [
+      "Move the person to a safe place if possible, call 112 for emergency services"
+    ],
+    "latitude": 17.346617149191275,
+    "longitude": 78.5367522523477,
+    "location": "17.346617149191275, 78.5367522523477",
+    "language": "తెలుగు",
+    "status": "NEW",
+    "createdAt": "2026-10-06T12:30:19.104Z",
+    "updatedAt": "2026-10-06T12:30:19.104Z"
+  },
+  {
+    "id": "SH-1005",
+    "type": "ప్రమాదం జరిగింది",
+    "emergencyType": "ప్రమాదం జరిగింది",
+    "severity": "MEDIUM",
+    "description": "రోడ్డు ప్రమాదం జరిగింది ఇద్దరు చావు బతుకుల",
+    "conditions": [
+      "చావు బతుకులు ప్రమాదంగా పెరిగి"
+    ],
+    "actions": [
+      "చావు బతుకులు తీసుకుందా. తర్వాక్య సుమారు తీసుకుందా. చావు బతుకులను నిజమైన వ్యక్తికారం తీసుకుందా."
+    ],
+    "latitude": 17.346617149191275,
+    "longitude": 78.5367522523477,
+    "location": "17.346617149191275, 78.5367522523477",
+    "language": "తెలుగు",
+    "status": "NEW",
+    "createdAt": "2026-10-06T12:32:39.954Z",
+    "updatedAt": "2026-10-06T12:32:39.954Z"
+  },
+  {
+    "id": "SH-1006",
+    "type": "Respiratory Emergency",
+    "emergencyType": "Respiratory Emergency",
+    "severity": "CRITICAL",
+    "description": "Someone is having difficulty breathing.",
+    "conditions": [
+      "Difficulty breathing"
+    ],
+    "actions": [
+      "Have the person sit in a comfortable position. Encourage them to take deep, slow breaths. If available, provide cool, moist air such as by using a cool, damp cloth over their nose and mouth. Do not attempt any rescue breathing. Encourage the person to contact emergency services immediately. Call 112 for immediate help."
+    ],
+    "latitude": 17.346632794987837,
+    "longitude": 78.53673632228144,
+    "location": "17.346632794987837, 78.53673632228144",
+    "language": "English",
+    "status": "NEW",
+    "createdAt": "2026-10-06T12:42:11.973Z",
+    "updatedAt": "2026-10-06T12:42:11.973Z"
+  },
+  {
+    "id": "SH-1007",
+    "type": "Accident with injuries",
+    "emergencyType": "Accident with injuries",
+    "severity": "CRITICAL",
+    "description": "There is a road accident. A person is unconscious and bleeding heavily.",
+    "conditions": [
+      "unconscious",
+      "bleeding heavily"
+    ],
+    "actions": [
+      "Call 112 immediately",
+      "Do not move the person if they are bleeding heavily",
+      "Apply pressure to the wound to stop bleeding if possible"
+    ],
+    "latitude": 17.346632794987837,
+    "longitude": 78.53673632228144,
+    "location": "17.346632794987837, 78.53673632228144",
+    "language": "English",
+    "status": "RESOLVED",
+    "createdAt": "2026-10-06T13:04:45.291Z",
+    "updatedAt": "2026-10-06T13:05:04.896Z"
+  },
+  {
+    "id": "SH-1008",
+    "type": "Road Accident with Injured Person",
+    "emergencyType": "Road Accident with Injured Person",
+    "severity": "HIGH",
+    "description": "There is a road accident. A person is unconscious and bleeding heavily.",
+    "conditions": [
+      "Person is unconscious",
+      "Person is bleeding heavily"
+    ],
+    "actions": [
+      "Move to safety if possible, avoid traffic",
+      "Do not move the person if they are unconscious and bleeding heavily",
+      "Apply pressure to bleeding area with clean cloth",
+      "Call 112 for immediate medical help"
+    ],
+    "latitude": 17.346632794987837,
+    "longitude": 78.53673632228144,
+    "location": "17.346632794987837, 78.53673632228144",
+    "language": "తెలుగు",
+    "status": "RESOLVED",
+    "createdAt": "2026-10-06T13:08:47.594Z",
+    "updatedAt": "2026-10-06T13:09:14.073Z"
+  }
+]
