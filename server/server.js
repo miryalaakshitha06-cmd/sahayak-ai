@@ -1,4 +1,4 @@
-const express = require("express");
+﻿const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const fs = require("fs");
@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const OLLAMA_URL = "http://localhost:11434/api/generate";
 
 // ======================================================
@@ -30,7 +30,7 @@ function readIncidents() {
 
     return JSON.parse(data || "[]");
   } catch (error) {
-    console.error("❌ Error reading incidents:", error);
+    console.error("âŒ Error reading incidents:", error);
     return [];
   }
 }
@@ -44,7 +44,7 @@ function saveIncidents(incidents) {
 
     return true;
   } catch (error) {
-    console.error("❌ Error saving incidents:", error);
+    console.error("âŒ Error saving incidents:", error);
     return false;
   }
 }
@@ -80,14 +80,14 @@ app.post("/api/analyze", async (req, res) => {
 
     let languageInstruction = "";
 
-    if (selectedLanguage === "తెలుగు") {
+    if (selectedLanguage === "à°¤à±†à°²à±à°—à±") {
       languageInstruction = `
 Respond completely in Telugu.
 Use clear, simple Telugu that an ordinary person
 can understand during an emergency.
 Keep important emergency terms understandable.
 `;
-    } else if (selectedLanguage === "हिंदी") {
+    } else if (selectedLanguage === "à¤¹à¤¿à¤‚à¤¦à¥€") {
       languageInstruction = `
 Respond completely in Hindi.
 Use clear, simple Hindi that an ordinary person
@@ -155,8 +155,8 @@ Emergency description:
 ${emergencyText}
 `;
 
-    console.log(`🌐 Language selected: ${selectedLanguage}`);
-    console.log(`🚨 Emergency received: ${emergencyText}`);
+    console.log(`ðŸŒ Language selected: ${selectedLanguage}`);
+    console.log(`ðŸš¨ Emergency received: ${emergencyText}`);
 
     const ollamaResponse = await fetch(OLLAMA_URL, {
       method: "POST",
@@ -209,7 +209,7 @@ ${emergencyText}
       });
     }
 
-    console.log("✅ AI analysis completed successfully.");
+    console.log("âœ… AI analysis completed successfully.");
 
     res.json(result);
 
@@ -354,7 +354,7 @@ app.post("/api/incidents", (req, res) => {
     }
 
     console.log(
-      `🚨 New incident created: ${newIncident.id}`
+      `ðŸš¨ New incident created: ${newIncident.id}`
     );
 
     res.status(201).json({
@@ -438,7 +438,7 @@ app.patch("/api/incidents/:id", (req, res) => {
     }
 
     console.log(
-      `🔄 Incident ${incidentId} updated to ${status}`
+      `ðŸ”„ Incident ${incidentId} updated to ${status}`
     );
 
     res.json({
@@ -467,10 +467,10 @@ app.patch("/api/incidents/:id", (req, res) => {
 app.listen(PORT, () => {
   console.log("");
   console.log(
-    `🚑 Sahayak AI Backend running on http://localhost:${PORT}`
+    `ðŸš‘ Sahayak AI Backend running on http://localhost:${PORT}`
   );
-  console.log("🤖 Local AI: Qwen 2.5 3B");
-  console.log("🌐 Multilingual: English + Telugu + Hindi");
-  console.log("💾 Incident Persistence: Enabled");
+  console.log("ðŸ¤– Local AI: Qwen 2.5 3B");
+  console.log("ðŸŒ Multilingual: English + Telugu + Hindi");
+  console.log("ðŸ’¾ Incident Persistence: Enabled");
   console.log("");
 });
